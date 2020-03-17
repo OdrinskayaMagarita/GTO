@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f9f9f9;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Burger" class="cls-1" d="M276,95h20v1H276V95Zm0,6h20v1H276v-1Zm0,6h20v1H276v-1Z" transform="translate(-275.5 -94.5)"/>
+</svg>
