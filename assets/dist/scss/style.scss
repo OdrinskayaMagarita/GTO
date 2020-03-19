@@ -186,6 +186,7 @@ button {
         a{
           font-size: 14px;
           color: #a2a2a2;
+          opacity: 0.5;
         }
         &:after{
           content: '';
@@ -204,6 +205,7 @@ button {
         a{
           color: #1e2336;
           font-size: 14px;
+          opacity: 0.5;
         }
       }
     }

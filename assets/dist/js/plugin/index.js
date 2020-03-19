@@ -8,4 +8,7 @@
         dots: true,
       });
       $(".slick-dots li button").empty();
+
+      $("#phone1").mask("+7(123) 456-78-90");
+
 });

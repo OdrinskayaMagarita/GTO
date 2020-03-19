@@ -37,6 +37,8 @@ grunt.initConfig({
 				'../markup/js/main.min.js': ['dist/js/main.js'],
 				'../markup/js/script.min.js': ['dist/js/script.js'],
 				'../markup/js/index.min.js': ['dist/js/plugin/index.js'],
+				'../markup/js/news.min.js': ['dist/js/plugin/news.js'],
+				'../markup/js/info-page.min.js': ['dist/js/plugin/info-page.js'],
 			},
 		}
 	},
