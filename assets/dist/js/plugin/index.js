@@ -6,9 +6,12 @@
         prevArrow: $('.prev-banner'),
         nextArrow: $('.next-banner'),
         dots: true,
+        fade: true,
+        cssEase: 'linear',
+        speed: 200,
       });
       $(".slick-dots li button").empty();
 
-      $("#phone1").mask("+7(123) 456-78-90");
+      // $("#phone1").mask("+7(123) 456-78-90");
 
 });

@@ -54,12 +54,16 @@ header {
                 li{
                     padding: 15px 0 15px 20px;
                     border-bottom: 1px solid #e4e4e4;
-                    h5{
-                        color: #1e2336;
-                        font-size: 16px;
-                        font-weight: 700;
+                    .go-contact{
                         margin-bottom: 10px;
+                        font-size: 16px;
                         text-align: left;
+                        a{
+                            color: #1e2336;
+                            font-size: 16px;
+                            font-weight: 700;
+                            text-align: left;
+                        }
                     }
                     .all-img{
                         display: flex;
@@ -334,7 +338,7 @@ header {
                     font-size: 14px;
                     font-weight: 500;
                     color: #1e2336;
-                    
+                    line-height: 23px;
                     max-width: 220px;
                     span{
                         text-align: center;
@@ -352,34 +356,34 @@ header {
                         justify-content: center;
                         li{
                             transition: 0.5s;
-                            padding: 30px 15PX;
-                            position: relative;
-                            &:before{
-                                content: '';
-                                position: absolute;
-                                left: 0;
-                                bottom: 0;
-                                height: 3px;
-                                background-color: #3eb9fc;
-                                transition: 0.5s;
-                                opacity: 0;
-                                width: 100%;
-                            }
                             a{
                                 color: #1e2336;
                                 font-size: 18px;
                                 font-weight: 500;
-                            }
-
-                            &:hover{
-                                background-color: #f1f2f7;
+                                padding: 30px 15PX;
+                                position: relative;
                                 &:before{
-                                    opacity: 1;
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    height: 3px;
+                                    background-color: #3eb9fc;
+                                    transition: 0.5s;
+                                    opacity: 0;
+                                    width: 100%;
+                                }
+                                &:hover{
+                                    background-color: #f1f2f7;
+                                    &:before{
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }
                         .open-choice{
                             position: relative;
+                            min-width: 191px;
                             a{
                                 display: flex;
                                 align-items: center;
@@ -387,9 +391,13 @@ header {
                                     font-size: 8px;
                                     margin-left: 10px;
                                     transition: 0.5s;
+                                    &:before{
+                                        font-weight: 600;
+                                    }
                                 }
                             }
                             .chooice{
+                                min-width: 191px;
                                 position: absolute;
                                 z-index: 50;
                                 display: none;
@@ -399,29 +407,22 @@ header {
                                 border: 1px solid #e5e7f0;
                                 max-width: 100%;
                                 li{
-                                    &:before{
-                                        content: '';
-                                        position: absolute;
-                                        left: 0;
-                                        bottom: 0;
-                                        height: 3px;
-                                        background-color: #3eb9fc;
-                                        transition: 0.5s;
-                                        opacity: 0;
-                                        width: 100%;
-                                    }
-                                    &:not(:last-of-type){
-                                        border-bottom: 1px solid #e5e7f0;
-                                    }
+                                    margin-right: 0;
+                                    background-color: #f1f2f7;
+                                    text-align: center;
                                     a{
+                                        margin: 0 auto;
                                         color: #1e2336;
-                                        font-size: 18px;
-                                        font-weight: 500;
+                                        font-size: 16px;
+                                        transition: 0.5s;
+                                        padding: 10px 0px;
+                                        text-align: center;
+                                        display: block;
                                     }
                                     &:hover{
-                                        background-color: #f1f2f7;
-                                        &:before{
-                                            opacity: 1;
+                                        a{
+                                            text-decoration: underline;
+                                            color: #3eb9fc;
                                         }
                                     }
                                 }
@@ -454,9 +455,11 @@ header {
                     margin-left: -68px;
                     ul{
                         li{
-                            padding:26px 30px;
                             &:not(:last-of-type){
                                 margin-right: 38px;
+                            }
+                            a{
+                                padding:26px 30px;
                             }
                         }
                         .open-choice{

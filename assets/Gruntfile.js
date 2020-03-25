@@ -37,7 +37,11 @@ grunt.initConfig({
 				'../markup/js/main.min.js': ['dist/js/main.js'],
 				'../markup/js/script.min.js': ['dist/js/script.js'],
 				'../markup/js/index.min.js': ['dist/js/plugin/index.js'],
+				'../markup/js/contact.min.js': ['dist/js/plugin/contact.js'],
 				'../markup/js/news.min.js': ['dist/js/plugin/news.js'],
+				'../markup/js/osago.min.js': ['dist/js/plugin/osago.js'],
+				'../markup/js/legal-inspection.min.js': ['dist/js/plugin/legal-inspection.js'],
+				'../markup/js/phys-inspection.min.js': ['dist/js/plugin/phys-inspection.js'],
 				'../markup/js/info-page.min.js': ['dist/js/plugin/info-page.js'],
 			},
 		}

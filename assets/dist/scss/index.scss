@@ -87,6 +87,8 @@ main {
             margin: 0 auto;
             width: 100%;
             margin-top: -18px;
+            position: relative;
+            z-index: 5;
             li{
               transition: 0.5s;
               min-width: 50px;
@@ -267,12 +269,14 @@ main {
             font-weight: 700;
             text-transform: uppercase;
             margin-bottom: 30px;
+            padding-right: 50px;
         }
         h6{
             opacity: 0.6;
             color: #1e2336;
             font-size: 18px;
             display: block;
+            padding-right: 40px;
         }
         .all-why{
             display:flex;
@@ -498,6 +502,7 @@ main {
                     color: #afb3bf;
                     font-size: 13px;
                     line-height: 19px;
+                    padding-right: 55px;
                     span{
                         color: #3eb9fc;
                         text-decoration: underline;
@@ -596,7 +601,10 @@ main {
                 .pol{
                     margin-top: 25px;
                     max-width: 246px;
-                    a{
+                    p{
+                        padding-right: 5px;
+                    }
+                    .red-button{
                         width: 246px;
                         height: 61px;
                         line-height: 61px;
@@ -720,7 +728,7 @@ main {
         }
     }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1400px){
     main{
         .top-banner{
             .all-slider{
@@ -761,6 +769,12 @@ main {
                 max-width: 125px;
                 position: absolute;
                 bottom: 25px;
+            }
+        }
+        .all-services{
+            .three-services{
+                flex-wrap: nowrap;
+                align-items: stretch;
             }
         }
         .why-we-easy{
@@ -864,6 +878,7 @@ main {
         .why-we-easy{
             flex-wrap: nowrap;
             justify-content: space-between;
+            margin-bottom: -9px;
             .custom-pagin{
                 margin-bottom: 26px;
                 margin-left: 9px;
@@ -927,14 +942,14 @@ main {
                     margin-right: 163px;
                 }
                 .inp{
-                    &:nth-child(1){
+                    &:nth-child(3){
                         input{
-                            width: 307px;
+                            width: 277px;
                         }
                     }
                     &:nth-child(2){
                         input{
-                            width: 280px;
+                            width: 307px;
                         }
                     }
                 }

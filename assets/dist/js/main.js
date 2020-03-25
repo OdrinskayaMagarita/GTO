@@ -16,8 +16,65 @@ $(document).ready(function(){
        $('nav').stop().removeClass('open-nav');
        $('.back-dark').css('display','none'); 
     });
+
+    $( ".open-request-call" ).click(function() {
+      $('.request-call').css('display','block');
+      $('.back-dark').css('display','block'); 
+      $('body').css('overflow','hidden'); 
+   });
+    $( ".open-thank" ).click(function() {
+      $('.thank').css('display','block');
+      $('.back-dark').css('display','block'); 
+      $('body').css('overflow','hidden'); 
+   });
+   //  $( ".open-thank-check" ).click(function(event) {
+   //    $('.thank').css('display','block');
+   //       $('.back-dark').css('display','block'); 
+   //       $('body').css('overflow','hidden'); 
+   // });
+
+   $( ".cont-call" ).click(function(event) {
+      event.preventDefault();
+      var ph = $("#phone3").val();
+      var nam = $("#name").val();
+      console.log(nam);
+      if((ph === "") || (nam === "")){
+        alert('Заполните форму')
+      }
+      else{
+         $('.request-call').css('display','none');
+         $('.thank').css('display','block');
+         $('.back-dark').css('display','block'); 
+         $('body').css('overflow','hidden'); 
+      }
+   });
     $( ".back-dark" ).click(function() {
        $('nav').stop().removeClass('open-nav');
        $('.back-dark').css('display','none'); 
+       $('.popUp').css('display','none'); 
+       $('body').css('overflow','auto'); 
     });
+
+    $( ".closePop" ).click(function() {
+       $('.back-dark').css('display','none'); 
+       $('.popUp').css('display','none'); 
+       $('body').css('overflow','auto'); 
+    });
+    $( ".closeOnBut" ).click(function() {
+       $('.back-dark').css('display','none'); 
+       $('.popUp').css('display','none'); 
+       $('body').css('overflow','auto'); 
+    });
+
+    $( ".go-contact" ).click(function() {
+      var a = $(this).attr('data-adress');
+      localStorage.setItem('myKey', a);
+   });
+
+   // window.onload = function() {
+   //    var localValue = localStorage.getItem('myKey');
+   //    console.log(localValue);
+   // };
+
+      // $("#phone3").mask("+7(123) 450-67-89");
 });
