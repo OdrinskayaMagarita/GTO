@@ -54,14 +54,17 @@ footer {
         }
         .second{
             margin-bottom: 25px;
-            max-width: 290px;
+            max-width: 100%;
+            width: 100%;
             ul{
-                -webkit-columns: 2;
-                -moz-columns: 2;
-                columns: 130px 2;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                max-width: 270px;
                 li{
                     margin-bottom: 25px;
-                    margin-right: 70px;
+                    width: 50%;
                     a{
                         color: #1e2336;
                         font-size: 16px;
@@ -92,6 +95,7 @@ footer {
                 justify-content: space-between;
                 p{
                     margin-right: 25px;
+                    margin-bottom: 0;
                 }
                 a{
                     width: 235px;
@@ -120,13 +124,21 @@ footer {
             opacity: 0.5;
             color: #1e2336;
             font-size: 14px;
-            
+            margin-bottom: 30px;
         }
     }
 }
 @media screen and (min-width: 375px){
     footer{
         .all-footer{
+            justify-content: space-around;
+            .second{
+                ul{
+                    margin: 0 auto;
+                }
+            }
+        }
+        .bottom-footer{
             justify-content: space-around;
         }
     }
@@ -154,8 +166,11 @@ footer {
                 ul{
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    width: 100%;
+                    justify-content: space-around;
+                    max-width: 100%;
+                    li{
+                        width: auto;
+                    }
                 }
             }
             .right-part{
@@ -171,6 +186,9 @@ footer {
                 }
             }
         }
+        .bottom-footer{
+            justify-content: space-between;
+        }
     }
 }
 @media screen and (min-width: 1024px){
@@ -184,8 +202,9 @@ footer {
                 }
             }
             .second{
+                max-width: 50%;
                 ul{
-                    display: block;
+                    max-width: 100%;
                 }
             }
             .right-part{
@@ -210,10 +229,15 @@ footer {
             flex-wrap: nowrap;
             justify-content: space-between;
             .second{
+                max-width: 290px;
+                width: auto;
                 ul{
-                    columns: 1;
-                    -webkit-columns: 1;
-                    -moz-columns: 1;
+                    max-width: 290px;
+                    width: auto;
+                   flex-direction: column;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                   min-width: 145px;
                 }
             }
         }

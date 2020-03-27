@@ -602,12 +602,13 @@ main {
                     margin-top: 25px;
                     max-width: 246px;
                     p{
-                        padding-right: 5px;
+                        padding-right: 10px;
                     }
                     .red-button{
                         width: 246px;
                         height: 61px;
                         line-height: 61px;
+                        margin-bottom: 12px;
                     }
                 }
             }
@@ -796,6 +797,10 @@ main {
             .all-form{
                 flex-wrap: nowrap;
                 justify-content: space-between;
+                margin-right: 6px;
+                .inp{
+                    margin-right: 5px;
+                }
                 h3{
                     width: auto;
                     margin-top: 37px;
