@@ -119,13 +119,14 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                h3{
+                a{
                     text-align: center;
                     font-family: "Roboto-Medium";
                     font-size: 14px;
                     font-weight: 500;
                     color: #1e2336;
                     max-width: 220px;
+                    display: block;
                     span{
                         text-align: center;
                         font-family: "Roboto-Bold";

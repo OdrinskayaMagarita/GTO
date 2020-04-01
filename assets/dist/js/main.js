@@ -27,12 +27,11 @@ $(document).ready(function(){
       $('.back-dark').css('display','block'); 
       $('body').css('overflow','hidden'); 
    });
-   //  $( ".open-thank-check" ).click(function(event) {
-   //    $('.thank').css('display','block');
-   //       $('.back-dark').css('display','block'); 
-   //       $('body').css('overflow','hidden'); 
-   // });
-
+    $( ".open-politic" ).click(function() {
+      $('.politic').css('display','block');
+      $('.back-dark').css('display','block'); 
+      $('body').css('overflow','hidden'); 
+   });
    $( ".cont-call" ).click(function(event) {
       event.preventDefault();
       var ph = $("#phone3").val();
@@ -48,6 +47,35 @@ $(document).ready(function(){
          $('body').css('overflow','hidden'); 
       }
    });
+   document.addEventListener("click", function(e) {
+      if (e.target.className=="open-contact-pop") {
+       $('.contact-pop').css('display','block');
+       $('.back-dark').css('display','block'); 
+       $('body').css('overflow','hidden'); 
+       $('.pop-slider').slick({
+           infinite: true,
+           arrows: true,
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           prevArrow: '<li class="prev-shema"><i class="icon-next"></i></li>',
+           nextArrow: '<li class="next-shema"><i class="icon-next"></i></li>',
+           dots: true,
+           customPaging : function(slider, i) {
+               var slidesCount = slider.slideCount;
+               return '<a class="link">'+(i+1)+'<span>'+slidesCount+'</span></a>'
+           },
+           responsive: [
+               {
+                   breakpoint: 1024,
+                   settings: {
+                       arrows: false,
+                   }
+               },
+               ]
+         });
+      }
+    });
+
     $( ".back-dark" ).click(function() {
        $('nav').stop().removeClass('open-nav');
        $('.back-dark').css('display','none'); 
@@ -70,11 +98,4 @@ $(document).ready(function(){
       var a = $(this).attr('data-adress');
       localStorage.setItem('myKey', a);
    });
-
-   // window.onload = function() {
-   //    var localValue = localStorage.getItem('myKey');
-   //    console.log(localValue);
-   // };
-
-      // $("#phone3").mask("+7(123) 450-67-89");
 });
